@@ -1,0 +1,76 @@
+#root {
+    width: 780px;
+    background-color: deepskyblue;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .app {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+  }
+  
+  .block {
+    border: 1px solid wheat;
+    width: 32%;
+    background-color: beige;
+    box-shadow: 5px 8px 5px -2px rgba(0, 0, 0, 0.26);
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .task {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid darkseagreen;
+    width: 100%;
+    background-color: honeydew;
+    min-height: 50px;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+  }
+  
+  
+  .delete-task {
+    display: none;
+  }
+  
+  .task:hover .delete-task {
+    display: block;
+  }
+  
+  .new-card {
+    margin-top: 10px;
+    color: gray;
+  }
+  
+  .footer {
+    display: flex;
+  }
+  
+  .button {
+    background-color: darkseagreen;
+    margin-right: 10px;
+  }
+  
+  .textarea {
+    resize: none;
+    display: block;
+    width: 100%;
+    border: 1px solid darkseagreen;
+    background-color: honeydew;
+    min-height: 50px;
+    padding: 5px;
+    box-sizing: border-box;
+    font: 1em "Fira Sans", serif
+  }
+  
+  .dragged {
+    border-radius: 10px;
+    position: absolute;
+    z-index: 999;
+    pointer-events: none;
+    width: 218px;
+  }
